@@ -1,22 +1,16 @@
-<?xml version="1.0"?>
-<flowgorithm fileversion="4.2">
-    <attributes>
-        <attribute name="name" value="fibonacci_sum."/>
-        <attribute name="authors" value="ASUS"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-17 03:24:10 PM"/>
-        <attribute name="created" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswMTo1MTo1OSBQTTsyNjAw"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswMzoyNDoxMCBQTTsxOzI2OTc="/>
-    </attributes>
-    <function name="Main" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="n" type="Integer" array="False" size=""/>
-            <input variable="n"/>
-            <for variable="n" start="1" end="1" direction="inc" step="5">
-                <output expression="1+1+2+3+5" newline="True"/>
-            </for>
-            <output expression="&quot;Jumlah seluruh deret hingga n&quot;" newline="True"/>
-        </body>
-    </function>
-</flowgorithm>
+// 12S25028_Novitasari Napitupulu
+// 12s25023_ferdinand sihombing
+<import java.util.*;
+import java.lang.Math;
+
+public class fibonacci_sum..fprg {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n, result;
+
+        n = Integer.parseInt(input.nextLine());
+        result = factorial(n);
+        System.out.println("factorial(" + n + ")=" + result);
+    }
+}
