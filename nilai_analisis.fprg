@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci_sum."/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:05:02 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswMTo1MTo1OSBQTTsyNjAw"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswNDowNTowMiBQTTs0OzI3MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="nb, total, maks, min" type="Real" array="False" size=""/>
+            <declare name="nm" type="Real" array="True" size="4"/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <output expression="&quot;Masukkan nilai ke-&quot;&amp;i+1&amp;&quot;:&quot;" newline="True"/>
+                <input variable="nm[i]"/>
+                <assign variable="total" expression="total+nm[i]"/>
+            </for>
+            <assign variable="nb" expression="total/4"/>
+            <assign variable="maks" expression="nm[0]"/>
+            <for variable="i" start="1" end="3" direction="inc" step="1">
+                <if expression="nm[i]&gt;maks">
+                    <then>
+                        <assign variable="maks" expression="nm[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="min" expression="nm[0]"/>
+            <for variable="i" start="1" end="3" direction="inc" step="1">
+                <if expression="nm[i]&lt;min">
+                    <then>
+                        <assign variable="min" expression="nm[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Rata-rata:&quot;&amp;nb" newline="True"/>
+            <output expression="&quot;nilai maksimum:&quot;&amp;maks" newline="True"/>
+            <output expression="&quot;nilai minimum:&quot;&amp;min" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

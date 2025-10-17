@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonacci_sum."/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 04:39:08 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswMTo1MTo1OSBQTTsyNjAw"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtMjJJRTlKNEM7MjAyNS0xMC0xNzswNDozOTowOCBQTTs0OzI3MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, result" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="result" expression="factorial(n)"/>
+            <output expression="&quot;factorial(&quot;&amp;n&amp;&quot;)=&quot;&amp; result" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,16 @@
+// 12S25028_Novitasari napitupulu
+// 12S25023_ferdinand sihombing
+import java.util.*;
+import java.lang.Math;
+
+public class factorial {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int n, result;
+
+        n = Integer.parseInt(input.nextLine());
+        result = factorial(n);
+        System.out.println("factorial(" + n + ")=" + result);
+    }
+}
