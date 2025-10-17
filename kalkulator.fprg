@@ -1,60 +1,43 @@
-<?xml version="1.0"?>
-<flowgorithm fileversion="4.2">
-    <attributes>
-        <attribute name="name" value="kalkulator"/>
-        <attribute name="authors" value="WINDOWS 11"/>
-        <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-17 04:25:11 PM"/>
-        <attribute name="created" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMTc7MTA6MDY6MTkgQU07MjkyMw=="/>
-        <attribute name="edited" value="V0lORE9XUyAxMTtSQUZBRUxTSVNFTU9TOzIwMjUtMTAtMTc7MTA6NTI6MTUgQU07MTszMDI4"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtOTRNMjk0Rks7MjAyNS0xMC0xNzswNDoyNToxMSBQTTsxOzI2OTg="/>
-    </attributes>
-    <function name="Main" type="None" variable="">
-        <parameters/>
-        <body>
-            <declare name="tambah, kurang, kali, bagi" type="Integer" array="False" size=""/>
-            <declare name="pilihan" type="String" array="False" size=""/>
-            <declare name="angka1, angka2" type="Integer" array="False" size=""/>
-            <input variable="pilihan"/>
-            <if expression="pilihan=&quot;1&quot;">
-                <then>
-                    <input variable="angka1"/>
-                    <input variable="angka2"/>
-                    <assign variable="tambah" expression="angka1 + angka2"/>
-                    <output expression="tambah" newline="True"/>
-                </then>
-                <else>
-                    <if expression="pilihan=&quot;2&quot;">
-                        <then>
-                            <input variable="angka1"/>
-                            <input variable="angka2"/>
-                            <assign variable="kurang" expression="angka1 - angka2"/>
-                            <output expression="kurang" newline="True"/>
-                        </then>
-                        <else>
-                            <if expression="pilihan=&quot;3&quot;">
-                                <then>
-                                    <input variable="angka1"/>
-                                    <input variable="angka2"/>
-                                    <assign variable="kali" expression="angka1 * angka2"/>
-                                    <output expression="kali" newline="True"/>
-                                </then>
-                                <else>
-                                    <if expression="pilihan=&quot;4&quot;">
-                                        <then>
-                                            <input variable="angka1"/>
-                                            <input variable="angka2"/>
-                                            <assign variable="bagi" expression="angka1/angka2"/>
-                                            <output expression="bagi" newline="True"/>
-                                        </then>
-                                        <else/>
-                                    </if>
-                                </else>
-                            </if>
-                        </else>
-                    </if>
-                </else>
-            </if>
-        </body>
-    </function>
-</flowgorithm>
+//12s25028_Novitasari napitupulu
+//12s25023_ferdinand sihombing
+import java.util.*;
+import java.lang.Math;
+
+public class kalkulator.fprg {
+    private static Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        int tambah, kurang, kali, bagi;
+        String pilihan;
+        int angka1, angka2;
+
+        pilihan = input.nextLine();
+        if (pilihan.equals("1")) {
+            angka1 = Integer.parseInt(input.nextLine());
+            angka2 = Integer.parseInt(input.nextLine());
+            tambah = angka1 + angka2;
+            System.out.println(tambah);
+        } else {
+            if (pilihan.equals("2")) {
+                angka1 = Integer.parseInt(input.nextLine());
+                angka2 = Integer.parseInt(input.nextLine());
+                kurang = angka1 - angka2;
+                System.out.println(kurang);
+            } else {
+                if (pilihan.equals("3")) {
+                    angka1 = Integer.parseInt(input.nextLine());
+                    angka2 = Integer.parseInt(input.nextLine());
+                    kali = angka1 * angka2;
+                    System.out.println(kali);
+                } else {
+                    if (pilihan.equals("4")) {
+                        angka1 = Integer.parseInt(input.nextLine());
+                        angka2 = Integer.parseInt(input.nextLine());
+                        bagi = (double) angka1 / angka2;
+                        System.out.println(bagi);
+                    }
+                }
+            }
+        }
+    }
+}
